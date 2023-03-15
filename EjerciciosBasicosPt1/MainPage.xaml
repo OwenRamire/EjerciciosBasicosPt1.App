@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjerciciosBasicosPt1.MainPage"
+             Title="Suma de dos numeros">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="5">
+            <Label Text="Dame el primer valor numerico" FontSize="Medium" />
+            <Entry x:Name="primerValor" FontSize="Medium" Keyboard="Numeric" />
+            <Label Text="Dame el segundo valor numerico" FontSize="Medium" />
+            <Entry x:Name="segundoValor" FontSize="Medium" Keyboard="Numeric" />
+            <Button
+                Text="Suma"
+                FontSize="Medium"
+                Background="BlueViolet"
+                Margin="20"
+                TextColor="White"
+                Clicked="Button_Clicked" 
+                />
+            <Label x:Name="resultado" FontAttributes="Bold" FontSize="Large" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
